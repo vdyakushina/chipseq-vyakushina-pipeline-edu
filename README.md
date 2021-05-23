@@ -46,6 +46,11 @@ snakemake -pr --use-conda --cores 8 --dry-run
 #snakemake -pr --use-conda --cores 8 --dry-run --notemp
 ```
 
+Archive pipeline results to a bundle
+```shell
+snakemake -pr --use-conda --cores 1 all_results_bundle
+```
+
 Some clusters automatically clean files older than 1 month. You could ask snakemake
 touch all files in a correct pipeline-specific order. At the moment it doesn't work
 with outputs marked as `temp(..)`:

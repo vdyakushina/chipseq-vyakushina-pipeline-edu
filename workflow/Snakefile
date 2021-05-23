@@ -33,7 +33,7 @@ rule all:
 
         # TODO: MACS2 *.narrowPeak peaks
 
-    # Let's archive pipeline results:
+rule all_results_bundle:
+    input: rules.all.input
     output: "chip_seq_results.tar.gz"
-    shell:
-        "tar -czvf {output} {input} logs benchmarks images"
+    shell: "tar -czvf {output} {input} logs benchmarks images"

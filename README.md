@@ -38,12 +38,17 @@ snakemake --dag | dot -Tsvg > images/dag.svg
 snakemake --rulegraph | dot -Tsvg > images/rulegraph.svg
 ```
 
-Run pipeline
+Check pipeline
 ```shell
 snakemake -pr --use-conda --cores 8 --dry-run
+```
+
+Run pipeline
+```shell
+snakemake -pr --use-conda --cores 8
 
 # or:
-#snakemake -pr --use-conda --cores 8 --dry-run --notemp
+#snakemake -pr --use-conda --cores 8 --notemp
 ```
 
 Archive pipeline results to a bundle

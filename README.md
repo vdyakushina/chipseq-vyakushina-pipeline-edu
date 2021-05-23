@@ -8,7 +8,7 @@ Peak calling step is missing on purposed and is supposed to be a simple exercise
 
 # Configure Pipeline
 ```shell
-git clone <repo_url> <pipeline_working_dir>
+git clone https://github.com/JetBrains-Research/chipseq-smk-pipeline-edu#configure-pipeline <pipeline_working_dir>
 
 cd <pipeline_working_dir>
 ```

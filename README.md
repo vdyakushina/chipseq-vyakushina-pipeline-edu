@@ -28,7 +28,7 @@ conda activate snakemake
 
 **Configure input data**:
 Download and unpack [example data](https://drive.google.com/file/d/1vtHVs4Yvf6ZnfynllxGYD7Lc96HuU46m/view?usp=sharing).
-Copy `reads` folder to working directory, `data_table.tsv` to `config` folder.
+Copy `reads` folder to working directory. Delete `data_table.tsv` because `config` folder already has more recent version of `data_table.csv`.
 
 # Run
 

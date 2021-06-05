@@ -24,13 +24,3 @@ rule bowtie2_index:
     conda: "../envs/bowtie.yaml"
     wrapper:
         "0.74.0/bio/bowtie2/build"
-
-rule target_indexes:
-    input:
-        expand(
-            (
-                *rules.download_reference.output,
-                *rules.bowtie2_index.output
-            ),
-            genome=config['genome']
-        )

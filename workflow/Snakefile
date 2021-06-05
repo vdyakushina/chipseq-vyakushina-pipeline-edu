@@ -12,6 +12,8 @@ include: "rules/align_reads.smk"
 include: "rules/coverage_track.smk"
 # TODO: MACS2 steps
 
+localrules: all, all_results_bundle
+
 # 'first' rule in file, which is executed by default
 rule all:
     input:

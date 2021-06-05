@@ -1,3 +1,5 @@
+localrules: bams_multiqc
+
 rule align_reads_se:
     input:
         sample=lambda wildcards: [SAMPLES_DF.loc[wildcards.sample, 'File']],

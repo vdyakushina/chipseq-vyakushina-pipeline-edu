@@ -1,3 +1,5 @@
+localrules: reads_multiqc
+
 rule reads_fastqc:
     input: lambda wildcards: SAMPLES_DF.loc[wildcards.sample, 'File']
     output:

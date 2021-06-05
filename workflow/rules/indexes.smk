@@ -20,6 +20,7 @@ rule bowtie2_index:
     params:
         extra=config['bowtie2_index']['extra']
     # Wrapper uses old 2.4.1 bowtie2, which doesn't work on my mac
+    # let's use custom conda env file with another bowtie2 version
     conda: "../envs/bowtie.yaml"
     wrapper:
         "0.74.0/bio/bowtie2/build"

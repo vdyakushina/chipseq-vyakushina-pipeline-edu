@@ -58,7 +58,7 @@ snakemake -pr --use-conda --cores 1 all_results_bundle
 
 Some clusters automatically clean files older than 1 month. You could ask snakemake
 touch all files in a correct pipeline-specific order. At the moment it doesn't work
-with outputs marked as `temp(..)`:
+with outputs marked as `temp(..)`, see https://github.com/snakemake/snakemake/issues/1028
 ```shell
-snakemake --cores 8 --use-conda --touch --forceall
+./workflow/touch_pipeline.sh | grep -v "macs2" | grep -v ".idea"
 ```

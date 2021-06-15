@@ -1,3 +1,6 @@
+
+Google folder with results: https://drive.google.com/file/d/1F1O08-gsBW1iRyNl34DGPjk7NSgIDWsw/view?usp=sharing
+
 # Into
 
 A simple pipeline for educational purposes. The pipeline:
